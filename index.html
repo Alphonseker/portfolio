@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap TD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+
+    <!--Barre de Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio Étudiant : CV et Lettres de Motivation</a>
+    </nav>
+
+
+    <main class="mt-5">
+
+        <!--Carte CV-->
+        <div class="card" style="width: 40rem;">
+            <div class="card-body">
+
+                <!-- En-tête de la carte -->
+                <h4 class="card-title">Kerbellec Alphonse</h4>
+                <img src="moi.png" alt="photo" width="200" style="display: block; margin: auto;">
+
+                <!-- Onglets -->
+                <ul class="nav nav-tabs" id="cvTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="etudes-tab" data-bs-toggle="tab" data-bs-target="#etudes" type="button" role="tab">Études</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="experiences-tab" data-bs-toggle="tab" data-bs-target="#experiences" type="button" role="tab">Expériences</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="competences-tab" data-bs-toggle="tab" data-bs-target="#competences" type="button" role="tab">Compétences</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="interets-tab" data-bs-toggle="tab" data-bs-target="#interets" type="button" role="tab">Centres d'intérêts</button>
+                </li>
+                </ul>
+
+                <!-- Contenu des onglets -->
+                <div class="tab-content p-3 border border-top-0" id="cvTabsContent">
+                <!-- Etudes -->
+                <div class="tab-pane fade show active" id="etudes" role="tabpanel">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">INSA - Spécialité Informatique et Cybersécurité</li>
+                        <li class="list-group-item">INSA Hauts-de-France - Cycle préparatoire</li>
+                        <li class="list-group-item">Lycée Bréquigny à Rennes, obtention du Baccalauréat Général Section Européenne mention « Très Bien », spécialités Mathématiques, Physique-Chimie ainsi que Numérique et Sciences de l'Informatique.</li>
+                    </ul>
+                </div>
+
+                <!-- Expériences -->
+                <div class="tab-pane fade" id="experiences" role="tabpanel">
+
+                    <!-- Carrousel d'images -->
+                    <h5 class="mt-5">Galerie de projets</h5>
+
+                    <div id="carrouselProjets" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <div class="bg-dark">
+                            <img src="experience2.png" class="d-block w-100" alt="Projet 1">
+                        </div>
+                        <div class="text-center bg-dark text-white py-3">
+                            <h5>Nuit de l'info</h5>
+                            <p>“Nuit de l'Info 2024” qui est une expérience de travail de groupe dans le domaine de l'informatique, lors de laquelle nous devions nous organiser rapidement pour répondre au mieux aux défis proposés par les  différentes entreprises partenaires de l'événement, tout en découvrant de nouveaux langages (html, css, javascript).</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <div class="bg-light">
+                            <img src="experience1.png" class="d-block w-100" alt="Projet 1">
+                        </div>
+                        <div class="text-center bg-light text-black py-3">
+                            <h5>Stage Voirie</h5>
+                            <p>Stage ouvrier de 4 semaines (2023) au Service de la Voirie de Rennes Métropole qui m'a permis de mieux comprendre le fonctionnement d'une équipe ouvrière en relation avec son équipe de direction.</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contrôles (flèches) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrouselProjets" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrouselProjets" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" style="filter: invert(1);" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+                    </div>
+                </div>
+
+                <!-- Compétences -->
+                <div class="tab-pane fade" id="competences" role="tabpanel">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Réalisation de cette page :D">HTML/CSS/JavaScript</li>
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Jeu du Sudoku">Python</li>
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Requêtes, modélisation de bases de données">SQL</li>
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Programmation bas niveau et algorithmique">C</li>
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Développement orienté objet, interfaces graphiques">Java</li>
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Application de jeu d'échecs">Flutter</li>
+                    </ul>
+                </div>
+
+                <!-- Centres d'intérêts -->
+                <div class="tab-pane fade" id="interets" role="tabpanel">
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Géographie (GeoGuessr, jeux-geographiques.com)</li>
+                    <li class="list-group-item">Basket-ball, volley-ball</li>
+                    <li class="list-group-item">Voyages : Asie, Europe, USA</li>
+                    </ul>
+                </div>
+                </div>
+
+                <!--Bouton modale-->
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#maModale">Voir lettre de motivation</button>
+            </div>
+        </div>
+    </main>
+
+    <!--Modale lettre de motivation-->
+    <div class="modal fade" id="maModale" aria-labelledby="titreModale">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="titreModale">Lettre de motivation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                Je suis très motivé à faire plein de sites web tout jolis tout plein.
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
